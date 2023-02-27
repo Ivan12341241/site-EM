@@ -158,6 +158,9 @@ header>h3 {
 }
 
 .img_lists>h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     padding: 20px 0;
 }
 
@@ -212,16 +215,44 @@ header>h3 {
 }
 
 .lists_text>h3 {
-    margin: 10px 0;
+    margin: 5px 0 0 140px;
 }
 
 .text_bio {
     max-height: 220px;
     max-width: 800px;
     margin: 0 10px 100px;
-    padding: 0 10px 0 180px;
+    padding: 15px 10px 0 180px;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+.text_bio>pre {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 0 0 0 5px;
+}
+
+.text_bio>pre:before {
+    content: '❝';
+    padding-right: 4px;
+    font-size: 20px;
+}
+
+.text_bio>pre::after {
+    content: '❞';
+    padding-left: 4px;
+    font-size: 20px;
+}
+
+.text_bio>p {
+    border-left: 2px solid rgb(255, 211, 35);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 1px 0 1px 10px;
+    margin: 10px 0 0 0;
 }
 
 summary {
@@ -262,8 +293,16 @@ details[open]>.img_lists>img {
 }
 
 @media (max-width: 580px) {
+    .cont:active {
+        transform: translate(0, 0);
+        box-shadow: 7px 7px 7px white;
+        transition: .3s;
+    }
     details[open]>.img_lists>img {
         border-radius: 20px;
+    }
+    .lists_text>h3 {
+        margin: 5px 0;
     }
     details[open]>.lists_text {
         margin-top: 0px;
@@ -305,9 +344,9 @@ details[open]>.img_lists>img {
     }
 }
 
-@media (max-width: 535px) {
+@media (max-width: 540px) {
     .text_bio {
-        max-height: 365px;
+        max-height: 325px;
         margin-bottom: 10px;
         max-width: 175;
         margin: 0 10px 100px;
@@ -326,9 +365,18 @@ details[open]>.img_lists>img {
         overflow: scroll;
         overflow-x: hidden;
     }
+    .lists_text>h3 {
+        display: none;
+    }
 }
 
 @media (max-width: 395px) {
+    .text_bio>pre {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        margin: 0 0 0 5px;
+    }
     .text_bio {
         max-height: 575px;
         margin-bottom: 10px;
@@ -347,14 +395,6 @@ details[open]>.img_lists>img {
         padding: 0 10px 0;
         overflow: scroll;
         overflow-x: hidden;
-    }
-}
-
-@media (max-width: 580px) {
-    .cont:active {
-        transform: translate(0, 0);
-        box-shadow: 7px 7px 7px white;
-        transition: .3s;
     }
 }
 
