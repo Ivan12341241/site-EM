@@ -1,0 +1,120 @@
+@media (max-width: 580px) {
+    .cont:active {
+        transform: translate(0, 0);
+        box-shadow: 7px 7px 7px white;
+        transition: .3s;
+    }
+    details[open]>.img_lists>.slider>.slides>img {
+        border-radius: 20px;
+    }
+    .lists_text>h3 {
+        margin: 5px 0;
+    }
+    details[open]>.lists_text {
+        margin-top: 0px;
+    }
+    details[open] {
+        max-height: 1195px;
+        width: 100%;
+        box-shadow: 7px 7px 7px white;
+        color: rgb(255, 255, 255);
+    }
+    .lists {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+    }
+    details[open]>.img_lists {
+        max-width: 225pc;
+        margin-bottom: -5px;
+    }
+    details[close]>.img_lists {
+        max-width: 175px;
+        margin-bottom: -5px;
+    }
+    .img_lists>.slider>.slides>img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .text_bio {
+        max-height: 345px;
+        margin-bottom: 10px;
+        max-width: 175;
+        margin: 0 10px 100px;
+        padding: 0 10px 0;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .list_extm {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .text_bio {
+        max-height: 410px;
+        margin-bottom: 10px;
+        max-width: 175;
+        margin: 0 10px 100px;
+        padding: 0 10px 0;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .lists:hover {
+        transform: none;
+        box-shadow: none;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 455px) {
+    .text_bio {
+        max-height: 485px;
+        margin-bottom: 10px;
+        margin: 0 10px 20px;
+        padding: 0 10px 0;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .lists_text>h3 {
+        display: none;
+    }
+}
+
+@media (max-width: 395px) {
+    .text_bio>i {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+    }
+    .text_bio {
+        max-height: 575px;
+        margin-bottom: 10px;
+        margin: 0 10px 20px;
+        padding: 0 10px 0;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 290px) {
+    .text_bio {
+        max-height: 735px;
+        margin-bottom: 10px;
+        margin: 0 10px 20px;
+        padding: 0 10px 0;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 355px) {
+    .cont:active {
+        transform: translate(0, 0);
+        box-shadow: none;
+    }
+}
