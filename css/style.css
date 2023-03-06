@@ -105,6 +105,7 @@ header>h3 {
 }
 
 .nav_panel>ul>a {
+    border-radius: 2px;
     font-family: Verdana, sans-serif;
     margin: 7px 10px;
     padding: 7px;
@@ -144,8 +145,6 @@ header>h3 {
 }
 
 .lists {
-    display: flex;
-    flex-direction: row;
     margin: 20px;
     width: 175px;
     background-color: rgb(46, 46, 46);
@@ -154,10 +153,34 @@ header>h3 {
     transition: .3s;
 }
 
+.exm_top_text {
+    align-items: center;
+    margin: 20px 0 7px;
+    display: flex;
+    justify-content: center;
+    color: rgb(197, 197, 197);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.out {
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 0px 10px 1px;
+    content: '<';
+    margin-top: -2px;
+    margin-right: 10px;
+    font-size: 30px;
+    align-items: baseline;
+    background-color: rgb(197, 197, 197);
+    color: rgba(54, 54, 54, 0.847);
+}
+
 .lists:hover {
     transform: translate(-3px, -3px);
     box-shadow: 7px 7px 7px white;
     color: rgb(255, 255, 255);
+    transition: .3s;
 }
 
 .lists:active {
@@ -238,7 +261,7 @@ header>h3 {
     padding: 5px 10px 0 250px;
     overflow: scroll;
     overflow-x: hidden;
-    animation: showDiv 0.8s forwards;
+    animation: showDiv 1s forwards;
 }
 
 @keyframes showDiv {
@@ -332,12 +355,16 @@ details[close]>.text_bio {
     width: 175px;
 }
 
+details {
+    transition: 0s;
+}
+
 details[open] {
     max-height: 435px;
     width: 100%;
     box-shadow: 7px 7px 7px white;
     color: rgb(255, 255, 255);
-    transition: 0.9s;
+    transition: .3ss;
 }
 
 details[open]:hover {
@@ -348,6 +375,10 @@ details[open]:hover {
 
 details[open]>.lists_text {
     margin-top: -415px;
+}
+
+details[close]>.lists {
+    transition: 0s;
 }
 
 details[open]>.img_lists>.slider>.slides>img {
