@@ -1,4 +1,28 @@
 @media (max-width: 580px) {
+    .next {
+        display: none;
+        cursor: pointer;
+        border-radius: 6px;
+        align-items: center;
+        border: none;
+        padding: 20px 23px 18px 12px;
+        font-size: 19px;
+        width: 25px;
+        background-color: rgba(255, 255, 255, 0.762);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        transition: 0;
+        opacity: .7;
+    }
+    .next:hover {
+        opacity: .7;
+    }
+    .next:active {
+        right: 0;
+        opacity: 1;
+    }
     .cont:active {
         transform: translate(0, 0);
         box-shadow: 7px 7px 7px white;
