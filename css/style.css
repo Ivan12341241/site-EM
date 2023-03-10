@@ -238,9 +238,11 @@ header>h3 {
 }
 
 @keyframes showDiv {
-    0%,
-    99% {
+    0% {
         opacity: 0;
+    }
+    50% {
+        transition: .3s;
     }
     100% {
         opacity: 1;

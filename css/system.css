@@ -22,11 +22,8 @@
 
 *::-webkit-scrollbar-thumb {
     background-color: rgb(197, 197, 197);
-    /* цвет бегунка */
     border-radius: 10px;
-    /* округлось бегунка */
     border: 3px solid rgba(98, 98, 98, 0.695);
-    /* отступ вокруг бегунка */
 }
 
 .youtube {
@@ -42,6 +39,7 @@
 
 iframe {
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .youtube .play {
